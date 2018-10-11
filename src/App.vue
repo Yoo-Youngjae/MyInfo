@@ -29,7 +29,7 @@ export default {
     margin-top: 8px;
   }
   .mt-3{
-    margin-top: 12px;
+    margin-top: 16px;
   }
   .mt-4{
     margin-top: 24px;
@@ -48,7 +48,7 @@ export default {
     margin-bottom: 8px;
   }
   .mb-3{
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
   .mb-4{
     margin-bottom: 24px;
@@ -67,7 +67,7 @@ export default {
     margin-right: 8px;
   }
   .mr-3{
-    margin-right: 12px;
+    margin-right: 16px;
   }
   .mr-4{
     margin-right: 24px;
@@ -86,7 +86,7 @@ export default {
     margin-left: 8px;
   }
   .ml-3{
-    margin-left: 12px;
+    margin-left: 16px;
   }
   .ml-4{
     margin-left: 24px;
@@ -106,7 +106,7 @@ export default {
     padding-top: 8px;
   }
   .pt-3{
-    padding-top: 12px;
+    padding-top: 16px;
   }
   .pt-4{
     padding-top: 24px;
@@ -125,7 +125,7 @@ export default {
     padding-bottom: 8px;
   }
   .pb-3{
-    padding-bottom: 12px;
+    padding-bottom: 16px;
   }
   .pb-4{
     padding-bottom: 24px;
@@ -144,7 +144,7 @@ export default {
     padding-right: 8px;
   }
   .pr-3{
-    padding-right: 12px;
+    padding-right: 16px;
   }
   .pr-4{
     padding-right: 24px;
@@ -163,7 +163,7 @@ export default {
     padding-left: 8px;
   }
   .pl-3{
-    padding-left: 12px;
+    padding-left: 16px;
   }
   .pl-4{
     padding-left: 24px;

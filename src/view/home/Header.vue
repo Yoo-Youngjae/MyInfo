@@ -5,7 +5,7 @@
         <img src="../../assets/logo.png" class="logo" >
 
         <v-spacer></v-spacer>
-        <h4 class="color-white cp mr-3" @click="showDevelopAlert">언어변경</h4>
+        <h4 class="color-white cp mr-3">언어변경</h4>
       </v-layout>
     </div>
     <div class="dummy-header">
@@ -34,7 +34,7 @@
     height: 60px;
   }
   .logo{
-    width: 80px;
+    width: 60px;
     margin-left: 20px;
     cursor: pointer;
   }
