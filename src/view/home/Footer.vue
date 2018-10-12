@@ -16,7 +16,9 @@
 
 <style scoped>
   .footer-wrapper{
-    background-color: blanchedalmond;
+    background-color: #EBB2D5;
     min-height: 80px;
+    padding: 16px;
+
   }
 </style>
