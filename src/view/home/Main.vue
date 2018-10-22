@@ -79,53 +79,84 @@
 </script>
 
 <style scoped>
-  .top-data{
-    display: flex;
+  /*web 일때*/
+  @media only screen and (min-width: 960px) {
+    .top-data{
+      display: flex;
+    }
+    .date{
+      font-weight: 500;
+      font-size: 20px;
+      width: 50%;
+    }
+    .place{
+      text-align: right;
+      font-weight: 500;
+      font-size: 20px;
+      width: 50%;
+    }
+    .marry-main{
+      margin-top: 24px;
+      margin-bottom: 24px;
+      opacity: 0.8;
+      width: 500px;
+    }
+    .carousel{
+      width: 500px;
+    }
   }
-.date{
-  font-weight: 500;
-  font-size: 16px;
-  width: 50%;
-}
-  .place{
-    text-align: right;
-    font-weight: 500;
-    font-size: 16px;
-    width: 50%
-  }
-  .marry-main{
-    margin-top: 24px;
-    margin-bottom: 24px;
-    opacity: 0.8;
-    width:100%;
-  }
-  .cheer-me{
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    color: #F473CD;
-    margin-bottom: 24px;
+  /*mobile 일때*/
+  @media only screen and (max-width: 959px) {
+    .top-data{
+      display: flex;
+    }
+    .date{
+      font-weight: 500;
+      font-size: 16px;
+      width: 50%;
+    }
+    .place{
+      text-align: right;
+      font-weight: 500;
+      font-size: 16px;
+      width: 50%
+    }
+    .marry-main{
+      margin-top: 24px;
+      margin-bottom: 24px;
+      opacity: 0.8;
+      width:100%;
+    }
+    .cheer-me{
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      color: #F473CD;
+      margin-bottom: 24px;
+    }
+
+    .middle-text1{
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+    }
+    .middle-text2{
+      padding-top: 10px;
+      font-weight: 500;
+    }
+    .middle-text3{
+      font-weight: 600;
+      font-size: 16px;
+      padding-top: 8px;
+    }
+    .carousel{
+      margin-top: 16px;
+    }
+    .direction-map{
+      font-weight: 600;
+      font-size: 16px;
+    }
   }
 
-  .middle-text1{
-    font-weight: 600;
-    font-size: 16px;
-    text-align: center;
-  }
-  .middle-text2{
-    padding-top: 10px;
-    font-weight: 500;
-  }
-  .middle-text3{
-    font-weight: 600;
-    font-size: 16px;
-    padding-top: 8px;
-  }
-  .carousel{
-    margin-top: 16px;
-  }
-  .direction-map{
-    font-weight: 600;
-    font-size: 16px;
-  }
+
 </style>

@@ -33,6 +33,12 @@
 </script>
 
 <style scoped>
+  /*web 일때*/
+  @media only screen and (min-width: 960px) {
+    .mobile-menu{
+      display: none;
+    }
+  }
   .header-wrapper{
     height: 60px;
     background-color: #FFA4D0;
