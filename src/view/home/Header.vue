@@ -2,17 +2,22 @@
   <div >
     <div class="header-wrapper">
       <v-layout align-center row fill-height>
-        <img src="../../assets/logo.png" class="logo" >
+        <img v-if="iswedding" src="../../assets/logo.png" class="logo" >
+        <img v-else src="../../assets/logo_developers.png" class="logo_develop" >
         <v-spacer></v-spacer>
-        <div class="web-menu" @click="goMyInfo">
+        <div v-if="iswedding" class="web-menu" @click="goMyInfo">
           내 프로필로 가기
+        </div>
+        <div v-else class="web-menu" @click="goWedding">
+          청첩장 예시로 가기
         </div>
         <v-icon class="mobile-menu" @click="onMenu">menu</v-icon>
       </v-layout>
     </div>
     <div class="dummy-header"></div>
-    <div v-if="showMenu" class="menu" @click="goMyInfo">
-      내 프로필로 가기
+    <div v-if="showMenu" class="menu">
+      <div v-if="iswedding" @click="goMyInfo">내 프로필로 가기</div>
+      <div v-else @click="goWedding">청첩장 예시로 가기</div>
     </div>
   </div>
 </template>
@@ -23,6 +28,15 @@
       data: function () {
         return {
           showMenu: false,
+          iswedding: false,
+        }
+      },
+      computed:{
+
+      },
+      created(){
+        if(this.$router.currentRoute.name === 'wedding'){
+          this.iswedding = true;
         }
       },
         methods:{
@@ -30,8 +44,13 @@
             this.showMenu = !this.showMenu;
           },
           goMyInfo(){
-            this.$router.push("MyInfo");
-          }
+            this.iswedding = false;
+            this.$router.push("/");
+          },
+          goWedding(){
+            this.iswedding = true;
+            this.$router.push("/wedding");
+          },
         }
     }
 </script>
@@ -73,6 +92,11 @@
     width: 60px;
     margin-left: 20px;
     cursor: pointer;
+  }
+  .logo_develop{
+    width: 60px;
+    margin-left: 20px;
+    opacity: 0.85;
   }
   .mobile-menu{
     color: white;

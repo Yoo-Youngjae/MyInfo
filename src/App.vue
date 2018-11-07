@@ -209,6 +209,10 @@ export default {
     font-size: 12px;
     font-weight: 400;
   }
+  .h6{
+    font-size: 12px;
+    font-weight: 400;
+  }
 
   /*cursor : pointer*/
   .cp{
