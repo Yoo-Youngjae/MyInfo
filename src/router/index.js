@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from '@/view/home/Main'
+import WeddingExample from '@/view/home/weddingExample/WeddingExample.vue'
+import MyInfo from '@/view/home/myInfo/MyInfo.vue'
 
 
 Vue.use(Router)
@@ -10,8 +11,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Main',
-      component: Main
+      name: 'WeddingExample',
+      component: WeddingExample
+    },
+    {
+      path: '/myInfo',
+      name: 'MyInfo',
+      component: MyInfo
     }
   ]
 })

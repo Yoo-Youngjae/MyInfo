@@ -31,7 +31,7 @@
   @media only screen and (min-width: 960px) {
     .mainView{
       min-height: 700px;
-      max-width: 1200px;
+      max-width: 960px;
       width: 100%;
       margin-left: auto;
       margin-right: auto;
