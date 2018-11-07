@@ -1,10 +1,10 @@
 <template>
   <div class="main-wrapper">
     <v-layout row wrap class="top-profile">
-      <v-flex md2 xs5 offset-md1>
+      <v-flex md2 xs6 offset-md1>
         <img class="myPhoto" src="../../../assets/myinfo-myphoto.jpg">
       </v-flex>
-      <v-flex md3 xs5>
+      <v-flex md3 xs5 offset-xs1>
         <div  class="myname">
           <div class="korean-name">유영재</div>
           <div>(Yoo Youngjae)</div>
@@ -60,11 +60,11 @@
         <img src="../../../assets/myinfo-technic.png">
         <div class="h4a bold ml-2">경력</div>
       </v-layout>
-      <div class="ml-5 mr-5 mb-2 t-left d-inlineflex">
+      <div class="ml-5 mr-5 t-left d-inlineflex">
         ● Web frontend developer - Chainnovation 에서 근무(18.06~ 10.)
       </div>
-      <v-layout row wrap class="ml-5 mr-5 mb-2 t-left">
-        <div class=" color-purple medium mt-1">언어 |</div>
+      <v-layout row wrap class="ml-5 mb-2 t-left">
+        <div class=" color-purple medium mt-3">언어 |</div>
         <img class="vue-img" src="../../../assets/myinfo-vuejs.png">
         <img class="python-img" src="../../../assets/myinfo-python.png">
         <img class="vue-img" src="../../../assets/myinfo-c.png">
@@ -102,11 +102,11 @@
         <img src="../../../assets/myinfo-technic.png">
         <div class="h4a bold ml-3">최근 관심 분야</div>
       </v-layout>
-      <div class="ml-5 mr-5  t-left d-inlineflex">
-        <img class="blockchain-img" src="../../../assets/myinfo-blockchain.png">
-        <img class="blockchain-img" src="../../../assets/myinfo-deeplearning.png">
-        <img class="react-img" src="../../../assets/myinfo-react.png">
-      </div>
+      <v-layout row wrap class="ml-5  t-left d-inlineflex">
+        <img class="blockchain-img mt-2" src="../../../assets/myinfo-blockchain.png">
+        <img class="blockchain-img mt-2" src="../../../assets/myinfo-deeplearning.png">
+        <img class="react-img mt-2" src="../../../assets/myinfo-react.png">
+      </v-layout>
     </div>
   </div>
 </template>
@@ -124,16 +124,16 @@
     margin-bottom: 50px;
     padding: 50px 30px 50px 30px
   }
-  .myPhoto{
-    margin-left: 40px;
-    width: 130px;
-    height: 160px;
-  }
+
   /*web 일때*/
   @media only screen and (min-width: 960px) {
     .top-profile {
       display: flex;
       border-bottom: 0.5px solid #8d8d8d;
+    }
+    .myPhoto{
+      margin-left: 40px;
+      width: 100%;
     }
   }
   /*mobile 일때*/
@@ -141,10 +141,12 @@
     .top-profile {
       border-bottom: 0.5px solid #8d8d8d;
     }
+    .myPhoto{
+      width: 100%;
+    }
   }
   .myname{
     font-weight: 700;
-    width: 200px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
