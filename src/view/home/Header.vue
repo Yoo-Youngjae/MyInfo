@@ -58,6 +58,9 @@
 <style scoped>
   /*web 일때*/
   @media only screen and (min-width: 960px) {
+    .menu{
+      display: none;
+    }
     .mobile-menu{
       display: none;
     }
@@ -76,6 +79,21 @@
   @media only screen and (max-width: 959px) {
     .web-menu{
       display: none;
+    }
+    .menu{
+      z-index: 2;
+      width: 100%;
+      position: fixed;
+      top: 60px;
+      background-color: #FFA4D0;
+      border-top: 1px solid #FDE8F7;
+      padding: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .menu:hover{
+      color: #3e2723;
     }
   }
   .header-wrapper{
@@ -103,15 +121,5 @@
     margin-right: 16px;
     font-size: 36px;
   }
-  .menu{
-    z-index: 2;
-    width: 100%;
-    position: fixed;
-    top: 60px;
-    background-color: #FFA4D0;
-    border-top: 1px solid #FDE8F7;
-    padding: 8px;
-    color: white;
-    font-size: 16px;
-  }
+
 </style>
