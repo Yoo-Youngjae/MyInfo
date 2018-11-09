@@ -1,4 +1,4 @@
-# wedding-invitation
+# my-info
 
 > A Vue.js project
 
