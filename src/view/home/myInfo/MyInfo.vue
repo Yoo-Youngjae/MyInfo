@@ -24,14 +24,19 @@
           <div>
             dudwo325@naver.com
           </div>
+          <div>
+            https://github.com/Yoo-Youngjae
+          </div>
         </div>
       </v-flex>
       <v-flex md1 xs2 class="myinfo-detail">
         <div class="top-img">
-          <img class="mt-2" src="../../../assets/myinfo-address.png">
-          <img class="margin-phone" src="../../../assets/myinfo-phone.png">
-          <img class="mt-3" src="../../../assets/myinfo-email.png">
+          <img class="icon-size mt-2" src="../../../assets/myinfo-address.png">
+          <img class="icon-size margin-phone" src="../../../assets/myinfo-phone.png">
+          <img class="icon-size mt-3" src="../../../assets/myinfo-email.png">
+          <div class=" github">GitHub</div>
         </div>
+
       </v-flex>
       <v-flex xs1></v-flex>
     </v-layout>
@@ -123,6 +128,15 @@
     width: 100%;
     margin-bottom: 50px;
     padding: 50px 30px 50px 30px
+  }
+  .icon-size{
+    width: 14px;
+    height: 10px;
+  }
+  .github{
+    font-size: 10px;
+    margin-top: 22px;
+    color: #5889C5;
   }
 
   /*web 일때*/
