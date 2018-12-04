@@ -25,16 +25,29 @@
             dudwo325@naver.com
           </div>
           <div>
-            https://github.com/Yoo-Youngjae
+            <a href="https://github.com/Yoo-Youngjae" target="_blank" class="github-link">https://github.com/Yoo-Youngjae</a>
           </div>
         </div>
       </v-flex>
       <v-flex md1 xs2 class="myinfo-detail">
         <div class="top-img">
-          <img class="icon-size mt-2" src="../../../assets/myinfo-address.png">
-          <img class="icon-size margin-phone" src="../../../assets/myinfo-phone.png">
-          <img class="icon-size mt-3" src="../../../assets/myinfo-email.png">
-          <div class=" github">GitHub</div>
+          <a class="tooltip">
+            <img class="icon-size mt-2 ml-2" src="../../../assets/myinfo-address.png">
+            <span class="tooltip-content">Address</span>
+          </a>
+          <a style="width: 1px; height: 30px;"></a>
+          <a class="tooltip">
+            <img class="icon-size margin-phone ml-2" src="../../../assets/myinfo-phone.png">
+            <span class="tooltip-content">Phone</span>
+          </a>
+          <a class="tooltip">
+            <img class="icon-size margin-email ml-2" src="../../../assets/myinfo-email.png">
+            <span class="tooltip-content">Email</span>
+          </a>
+          <a class="tooltip">
+            <div class=" github">GitHub</div>
+            <span class="tooltip-content">GitHub</span>
+          </a>
         </div>
 
       </v-flex>
@@ -66,7 +79,8 @@
         <div class="h4a bold ml-2">경력</div>
       </v-layout>
       <div class="ml-5 mr-5 t-left d-inlineflex">
-        ● Web frontend developer - Chainnovation 에서 근무(18.06~ 10.)
+        ● Web frontend developer - Chainnovation 에서 근무 (18.06 ~ 10)<br>
+        - 가상화폐 OTC 거래소 개발
       </div>
       <v-layout row wrap class="ml-5 mb-2 t-left">
         <div class=" color-purple medium mt-3">언어 |</div>
@@ -135,7 +149,7 @@
   }
   .github{
     font-size: 10px;
-    margin-top: 22px;
+    margin-top: 14px;
     color: #5889C5;
   }
 
@@ -191,7 +205,10 @@
     flex-direction: column;
   }
   .margin-phone{
-    margin-top: 40px;
+    margin-top: 6px;
+  }
+  .margin-email{
+    margin-top: 12px;
   }
   .vue-img{
     width: 85px;
@@ -225,5 +242,8 @@
     margin-left: 16px;
     width: 80px;
     height: 60px;
+  }
+  .github-link{
+    text-decoration:none;
   }
 </style>

@@ -2,7 +2,7 @@
   <div class="footer-wrapper">
     <v-layout>
       <v-flex text-xs-right>
-        @Copy Writed by young-jae
+        @CopyWrited by Youngjae
       </v-flex>
     </v-layout>
   </div>
