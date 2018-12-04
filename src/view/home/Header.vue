@@ -1,24 +1,21 @@
 <template>
   <div >
+    <div v-if="showMenu" class="background-clicker" @click="closeMenu"></div>
     <div class="header-wrapper">
       <v-layout align-center row fill-height>
         <img v-if="iswedding" src="../../assets/logo.png" class="logo" >
         <img v-else src="../../assets/logo_developers.png" class="logo_develop" >
         <v-spacer></v-spacer>
-        <div v-if="iswedding" class="web-menu" @click="goMyInfo">
-          내 프로필로 가기
-        </div>
-        <div v-else class="web-menu" @click="goWedding">
-          청첩장 예시로 가기
-        </div>
-        <v-icon class="mobile-menu" @click="onMenu">menu</v-icon>
+        <v-icon class="menu-drawer" @click="onMenu">menu</v-icon>
       </v-layout>
     </div>
     <div class="dummy-header"></div>
-    <div v-if="showMenu" class="menu">
-      <div v-if="iswedding" @click="goMyInfo">내 프로필로 가기</div>
-      <div v-else @click="goWedding">청첩장 예시로 가기</div>
-    </div>
+    <transition name="header-menu">
+      <div v-if="showMenu" class="menu">
+        <div v-if="iswedding" @click="goMyInfo">내 프로필로 가기</div>
+        <div v-else @click="goWedding">청첩장 예시로 가기</div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -51,6 +48,9 @@
             this.iswedding = true;
             this.$router.push("/wedding");
           },
+          closeMenu(){
+            this.showMenu = !this.showMenu;
+          }
         }
     }
 </script>
@@ -58,11 +58,23 @@
 <style scoped>
   /*web 일때*/
   @media only screen and (min-width: 960px) {
-    .menu{
-      display: none;
+    .menu {
+      z-index: 2;
+      width: 100%;
+      position: fixed;
+      top: 60px;
+      background-color: #FFA4D0;
+      border-top: 1px solid #FDE8F7;
+      padding: 8px;
+      padding-left: 24px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
     }
-    .mobile-menu{
-      display: none;
+    .menu-drawer{
+      color: white;
+      margin-right: 16px;
+      font-size: 36px;
     }
     .web-menu{
       color: white;
@@ -92,9 +104,7 @@
       font-size: 16px;
       cursor: pointer;
     }
-    .menu:hover{
-      color: #3e2723;
-    }
+
   }
   .header-wrapper{
     height: 60px;
@@ -116,10 +126,29 @@
     margin-left: 20px;
     opacity: 0.85;
   }
-  .mobile-menu{
+  .menu-drawer{
     color: white;
     margin-right: 16px;
     font-size: 36px;
   }
+  .menu:hover{
+    color: #3e2723;
+  }
+  .background-clicker{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  .header-menu-enter-active, .header-menu-leave-active{
+    transition: all .3s ease-out;
+  }
 
+  .header-menu-enter, .header-menu-leave-to{
+    transform: translateY(-10px) scaleY(0.8);
+    opacity: 0;
+  }
+
+  .test{
+    color: white;
+  }
 </style>

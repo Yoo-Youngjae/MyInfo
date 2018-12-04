@@ -249,4 +249,43 @@ export default {
     display: inline-flex;
   }
 
+  .tooltip {
+    position: relative;
+    display: inline;
+  }
+  .tooltip .tooltip-content {
+    display: none;
+    position: absolute;
+    padding: 8px;
+    color: #FFFFFF;
+    background: #545c6a;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 2px;
+    line-height: 1;
+  }
+
+  .tooltip .tooltip-content:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #545c6a;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+  }
+
+  :hover.tooltip .tooltip-content {
+    display: block;
+    bottom: 120%;
+    left: 50%;
+    min-width: 43px;
+    transform: translateX(-50%);
+    z-index: 100;
+  }
+
+
 </style>
