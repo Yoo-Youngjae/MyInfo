@@ -25,7 +25,9 @@
             dudwo325@naver.com
           </div>
           <div>
-            https://github.com/Yoo-Youngjae
+            <a href="https://github.com/Yoo-Youngjae" target="_blank">
+              https://github.com/Yoo-Youngjae
+            </a>
           </div>
         </div>
       </v-flex>
@@ -57,17 +59,29 @@
         <div class=" h4abold ml-2">학력</div>
       </v-layout>
       <div class="ml-5 mr-5 t-left">
-        <span class="color-purple ">대학 |</span>
+        <span class="color-purple bold">대학 |</span>
         <span> 서울대학교 컴퓨터공학부(복수전공 응용생물학)</span>
-        <div>- 2013.03 ~ . 현재 4학년 2학기 휴학중</div>
+        <div>- 2013.03 ~  현재 4학년 2학기 휴학중</div>
       </div>
       <v-layout fill-height align-center mt-3>
         <img src="../../../assets/myinfo-technic.png">
         <div class="h4a bold ml-2">경력</div>
       </v-layout>
-      <div class="ml-5 mr-5 t-left d-inlineflex">
-        ● Web frontend developer - Chainnovation 에서 근무(18.06~ 10.)
+      <div class="ml-5 mr-5 t-left ">
+        <div class="mb-2">
+          <span class="color-purple bold">● Web frontend developer |</span>
+          <span> Chainnovation 에서 근무 (18.06 ~ 18.10)<br>
+            - 가상화폐 OTC 거래소 개발</span>
+        </div>
+
+        <div>
+          <span class="color-purple bold">● Internship |</span>
+          <span> Naver 에서 근무 (19.01 ~ 19.12)<br>
+          - 네이버쇼핑 상품컨텐츠 개발</span>
+        </div>
       </div>
+
+
       <v-layout row wrap class="ml-5 mb-2 t-left">
         <div class=" color-purple medium mt-3">언어 |</div>
         <img class="vue-img" src="../../../assets/myinfo-vuejs.png">
@@ -81,8 +95,16 @@
       </v-layout>
       <div class="ml-5 mr-5 t-left activity">
         <div>
+          <span class="color-purple">● 교내 딥러닝 수업 |</span>
+          <span class="h6"> 텐서플로를 이용한 DNN, CNN, RNN 짜보</span>
+        </div>
+        <div>
+          <span class="color-purple">● 삼성 SW역량테스트 |</span>
+          <span class="h6"> A형 인증 취득</span>
+        </div>
+        <div>
           <span class="color-purple">● 교내 딥러닝 세미나 |</span>
-          <span class="h6"> 개념 이해('밑바닥부터 시작하는 딥러닝'을 이용)</span>
+          <span class="h6"> 개념 이해 ('밑바닥부터 시작하는 딥러닝'을 이용)</span>
         </div>
         <div>
           <span class="color-purple medium">● 개발동아리 |</span>
@@ -90,14 +112,18 @@
         </div>
 
         <div>
-          <span class="color-purple medium">● LG CNS 기업체 멘토링 - 회사의 문화란</span>
+          <span class="color-purple medium">● LG CNS 기업체 멘토링 |</span>
+          <span> 회사의 문화란</span>
         </div>
         <div>
           <span class="color-purple medium">● 페이스북 페이지 운영 |</span>
           <span>'영재의 책장'</span>
         </div>
         <div>
-          <span class="color-purple medium">● 중, 고등 수학과외 3년차</span>
+          <span class="color-purple medium">● 중, 고등 수학과외 4년차</span>
+        </div>
+        <div>
+          <span class="color-purple medium">● 중, 고등 코딩과외 1년차</span>
         </div>
         <div>
           <span class="color-purple medium">● 공군병장 만기전역</span>
