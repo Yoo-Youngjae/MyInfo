@@ -2,7 +2,7 @@
   <div class="footer-wrapper">
     <v-layout>
       <v-flex text-xs-right>
-        @Copy Writed by young-jae
+        @Made by young-jae
       </v-flex>
     </v-layout>
   </div>
@@ -16,7 +16,7 @@
 
 <style scoped>
   .footer-wrapper{
-    background-color: #EBB2D5;
+    background-color: #f5f5f5;
     min-height: 80px;
     padding: 16px;
 

@@ -1,16 +1,17 @@
 <template>
-  <div >
+  <div style="height: 120px">
     <div class="header-wrapper">
       <v-layout align-center row fill-height>
-        <img v-if="iswedding" src="../../assets/logo.png" class="logo" >
-        <img v-else src="../../assets/logo_developers.png" class="logo_develop" >
+        <!--<img v-else src="../../assets/logo_developers.png" class="logo_develop" >-->
+        <div class="logo_develop">
+          <div class="logo-myname">Youngjae Yoo</div>
+          <div class="logo-developer">Developer</div>
+        </div>
         <v-spacer></v-spacer>
         <div v-if="iswedding" class="web-menu" @click="goMyInfo">
-          내 프로필로 가기
+          My Profile
         </div>
-        <div v-else class="web-menu" @click="goWedding">
-          청첩장 예시로 가기
-        </div>
+        <img v-else src="../../assets/logo.png" class="web-menu logo" @click="goWedding">
         <v-icon class="mobile-menu" @click="onMenu">menu</v-icon>
       </v-layout>
     </div>
@@ -45,10 +46,12 @@
           },
           goMyInfo(){
             this.iswedding = false;
+            this.showMenu = false;
             this.$router.push("/");
           },
           goWedding(){
             this.iswedding = true;
+            this.showMenu = false;
             this.$router.push("/wedding");
           },
         }
@@ -65,7 +68,7 @@
       display: none;
     }
     .web-menu{
-      color: white;
+      /*color: white;*/
       font-weight: 600;
       font-size: 16px;
       cursor: pointer;
@@ -83,12 +86,14 @@
     .menu{
       z-index: 2;
       width: 100%;
+      height: 60px;
       position: fixed;
-      top: 60px;
-      background-color: #FFA4D0;
-      border-top: 1px solid #FDE8F7;
-      padding: 8px;
-      color: white;
+      top: 120px;
+      background-color: #ffffff;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      padding: 18px;
+      /*color: white;*/
       font-size: 16px;
       cursor: pointer;
     }
@@ -97,8 +102,9 @@
     }
   }
   .header-wrapper{
-    height: 60px;
-    background-color: #FFA4D0;
+    height: 120px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #263238;
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -112,13 +118,22 @@
     cursor: pointer;
   }
   .logo_develop{
-    width: 60px;
-    margin-left: 20px;
-    opacity: 0.85;
+    margin-left: 40px;
+    text-align: center;
+  }
+  .logo-myname{
+    font-weight: bold;
+    font-size: 24px;
+
+  }
+  .logo-developer{
+    font-size: 18px;
+
   }
   .mobile-menu{
-    color: white;
+    /*color: white;*/
     margin-right: 16px;
+    margin-top: -20px;
     font-size: 36px;
   }
 
